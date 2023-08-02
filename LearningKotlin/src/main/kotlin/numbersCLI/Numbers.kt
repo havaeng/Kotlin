@@ -1,4 +1,4 @@
-package NumbersCLI
+package numbersCLI
 
 import kotlin.random.Random
 

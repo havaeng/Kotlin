@@ -1,4 +1,4 @@
-package PrimeNumberChecker
+package primeNumberChecker
 
 /**
  * A simple program that checks if the given input number is a prime number.
@@ -28,6 +28,8 @@ fun main()  {
 
     for (i in 0 until threadCount){
         val numbersGroupStart = start + i * numbersPerCore
+
+        //Tricky
         val numbersGroupEnd = if (i == threadCount - 1) end else numbersGroupStart + numbersPerCore
 
         val thread = Thread {

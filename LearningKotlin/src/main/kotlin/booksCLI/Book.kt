@@ -1,4 +1,4 @@
-package BookInventory
+package booksCLI
 
 /**
  * A very simple CLI with object(s) from one class.
