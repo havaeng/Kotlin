@@ -1,8 +1,8 @@
-package primeNumberChecker
-
 /**
  * A simple program that checks if the given input number is a prime number.
  */
+
+package primeNumberChecker
 
 // Keyword "object" in Kotlin == Singleton
 object PrimeChecker {

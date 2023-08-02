@@ -1,3 +1,7 @@
+/**
+ * An implementation of a recursive binary search.
+ */
+
 package algorithms
 
 import kotlin.random.Random

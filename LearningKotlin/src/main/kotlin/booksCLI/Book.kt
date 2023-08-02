@@ -1,8 +1,8 @@
-package booksCLI
-
 /**
  * A very simple CLI with object(s) from one class.
  */
+
+package booksCLI
 
 class Book() {
     var ISBN: String? = null

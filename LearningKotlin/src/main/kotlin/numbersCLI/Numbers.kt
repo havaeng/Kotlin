@@ -1,10 +1,11 @@
+/**
+ * My first Kotlin application! An extremely rudimentary CLI.
+ */
+
 package numbersCLI
 
 import kotlin.random.Random
 
-/**
- * My first Kotlin application! An extremely rudimentary CLI.
- */
 fun main(args: Array<String>) {
     println("Welcome! Please make a choice: ")
 
