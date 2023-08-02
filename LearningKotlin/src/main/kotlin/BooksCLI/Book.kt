@@ -1,7 +1,7 @@
 package BookInventory
 
 /**
- * A very simple CLI with objects from one class.
+ * A very simple CLI with object(s) from one class.
  */
 
 class Book() {

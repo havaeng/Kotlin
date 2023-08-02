@@ -1,7 +1,10 @@
 package NumbersCLI
 
 import kotlin.random.Random
-//Hej
+
+/**
+ * My first Kotlin application! An extremely rudimentary CLI.
+ */
 fun main(args: Array<String>) {
     println("Welcome! Please make a choice: ")
 
