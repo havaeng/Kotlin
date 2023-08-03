@@ -4,7 +4,7 @@ import kotlin.random.Random
 
 fun main(){
     val random = Random
-    val size = 1000000
+    val size = 10000000
     val numbers = IntArray(size)
 
     for (i in numbers.indices) numbers[i] = random.nextInt(0,30)
@@ -12,12 +12,12 @@ fun main(){
     var start: Long = System.currentTimeMillis()
     mergeSort(numbers)
     var end: Long = System.currentTimeMillis()
-    println("Time lapsed: ${end - start} ms")
+    println("Time lapsed: ${end - start} ms for mergesort.")
 
     start = System.currentTimeMillis()
     isSortedAscending(numbers)
     end = System.currentTimeMillis()
-    println("\n\u001B[0mTime lapsed: ${end - start} ms")
+    println("\n\u001B[0mTime lapsed: ${end - start} ms for ensuring sorted ascended.")
 }
 
 fun mergeSort(inputArray: IntArray){

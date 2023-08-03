@@ -6,7 +6,7 @@ package algorithms
 
 import kotlin.random.Random
 fun main(){
-    val size = 50000
+    val size = 500000
     val target = Random.nextInt(0,size)
     //Ordered data structure with constant - O(1) - access time
     val vector = populateAndSort(size)
@@ -16,14 +16,15 @@ fun main(){
     val end = System.currentTimeMillis()
     val timeLapsed = end - start
 
+    println("Target: $target")
     if (result == -1){
-        println("\u001B[31mTarget $target not found in array. \u001B[0mArray size was $size. Time elapsed: $timeLapsed ms.")
+        println("\u001B[31mNot found in array \u001B[0m\nArray size was $size \nTime elapsed: $timeLapsed ms")
     } else
-    println("\u001B[32mTarget $target found at index $result. \u001B[0mArray size was $size. Time elapsed: $timeLapsed ms.")
+    println("\u001B[32mFound at index $result \u001B[0m\nArray size was $size \nTime elapsed: $timeLapsed ms")
 }
 
 fun binarySearch(sortedVector: ArrayList<Int>, target : Int, low : Int, high : Int) : Int {
-    println("Recursive call made")
+    //println("Recursive call made")
     val middle = low + ((high - low) / 2)
     //Exit condition. If true - not done yet!
     if (high > low) {
