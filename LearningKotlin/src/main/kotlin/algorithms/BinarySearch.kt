@@ -6,8 +6,8 @@ package algorithms
 
 import kotlin.random.Random
 fun main(){
-    val size = 10000
-    val target = 9999
+    val size = 50000
+    val target = Random.nextInt(0,size)
     //Ordered data structure with constant - O(1) - access time
     val vector = populateAndSort(size)
 
