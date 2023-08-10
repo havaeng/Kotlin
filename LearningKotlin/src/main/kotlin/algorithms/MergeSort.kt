@@ -4,10 +4,10 @@ import kotlin.random.Random
 
 fun main(){
     val random = Random
-    val size = 10000000
+    val size = 100000000
     val numbers = IntArray(size)
 
-    for (i in numbers.indices) numbers[i] = random.nextInt(0,30)
+    for (i in numbers.indices) numbers[i] = random.nextInt(0,size)
 
     var start: Long = System.currentTimeMillis()
     mergeSort(numbers)
@@ -23,7 +23,7 @@ fun main(){
 fun mergeSort(inputArray: IntArray){
     val inputLength = inputArray.size
 
-    //Are we done dividing?
+    //Exit condition: are we done dividing?
     if (inputLength < 2) return
 
     val midIndex = inputLength / 2
@@ -47,8 +47,8 @@ fun mergeSort(inputArray: IntArray){
 }
 
 fun merge(inputArray: IntArray, leftHalf : IntArray, rightHalf : IntArray){
-    var leftSize = leftHalf.size
-    var rightSize = rightHalf.size
+    val leftSize = leftHalf.size
+    val rightSize = rightHalf.size
 
     var leftIterator = 0 //i
     var rightIterator = 0 //j
