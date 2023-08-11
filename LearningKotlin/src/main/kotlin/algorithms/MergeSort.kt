@@ -1,10 +1,19 @@
+/**
+ * An implementation of the MergeSort algorithm with some basic time measurements.
+ *
+ * Time complexity for MergeSort:
+ * Best: n log(n)
+ * Average: n log(n)
+ * Worst: n log(n)
+ */
+
 package algorithms
 
 import kotlin.random.Random
 
 fun main(){
     val random = Random
-    val size = 100000000
+    val size = 100000
     val numbers = IntArray(size)
 
     for (i in numbers.indices) numbers[i] = random.nextInt(0,size)
