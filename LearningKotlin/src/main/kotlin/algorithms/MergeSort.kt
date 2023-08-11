@@ -2,9 +2,10 @@
  * An implementation of the MergeSort algorithm with some basic time measurements.
  *
  * Time complexity for MergeSort:
- * Best: n log(n)
- * Average: n log(n)
- * Worst: n log(n)
+ * Best:    ω(n log(n))
+ * Average: θ(n log(n))
+ * Worst:   O(n log(n))
+ * Dividing is lg n, merging is n (linear)
  */
 
 package algorithms
@@ -16,6 +17,7 @@ fun main(){
     val size = 100000
     val numbers = IntArray(size)
 
+    //Populate
     for (i in numbers.indices) numbers[i] = random.nextInt(0,size)
 
     var start: Long = System.currentTimeMillis()

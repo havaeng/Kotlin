@@ -2,9 +2,9 @@
  * An implementation of the InsertionSort algorithm with some basic time measurements.
  *
  * Time complexity for InsertionSort:
- * Best: n
- * Average: n^2
- * Worst: n^2
+ * Best:    ω(n) (already sorted, small n values, )
+ * Average: θ(n^2)
+ * Worst:   O(n^2) ("reverse" sorted)
  */
 
 package algorithms
@@ -16,6 +16,7 @@ fun main(){
     val size = 100000
     val numbers = IntArray(size)
 
+    //Populate
     for (i in numbers.indices) numbers[i] = random.nextInt(0,size)
 
     /*
