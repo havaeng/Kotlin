@@ -1,9 +1,9 @@
 /**
  * An implementation of a recursive binary search.
  * Time complexity for binary search:
- * Best:    ω(1) - target found at the first middle index
- * Average: θ(lg n)
  * Worst:   O(lg n) - when not found
+ * Average: θ(lg n)
+ * Best:    ω(1) - target found at the first middle index
  */
 
 package algorithms
