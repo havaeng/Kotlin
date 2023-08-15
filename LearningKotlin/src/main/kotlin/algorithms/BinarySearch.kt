@@ -3,12 +3,13 @@
  * Time complexity for binary search:
  * Worst:   O(lg n) - when not found
  * Average: θ(lg n)
- * Best:    ω(1) - target found at the first middle index
+ * Best:    ω(1)    - target found at the first middle index
  */
 
 package algorithms
 
 import kotlin.random.Random
+
 fun main(){
     val size = 500000
     val target = Random.nextInt(0,size)

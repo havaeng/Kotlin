@@ -2,9 +2,9 @@
  * An implementation of the InsertionSort algorithm with some basic time measurements.
  *
  * Time complexity for InsertionSort:
- * Worst:   O(n^2) ("reverse" sorted)
+ * Worst:   O(n^2)  - "reverse" sorted
  * Average: θ(n^2)
- * Best:    ω(n) (already sorted, small n values, etc)
+ * Best:    ω(n)    - already sorted, small n values, etc
  */
 
 package algorithms

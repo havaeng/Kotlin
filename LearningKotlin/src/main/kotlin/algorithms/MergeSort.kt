@@ -11,7 +11,6 @@
 
 package algorithms
 
-import kotlin.random.Random
 class MergeSort : Sorter {
     override fun sort(inputArray: IntArray){
         val inputLength = inputArray.size
@@ -39,13 +38,13 @@ class MergeSort : Sorter {
         merge(inputArray, leftHalf, rightHalf)
     }
 
-    fun merge(inputArray: IntArray, leftHalf : IntArray, rightHalf : IntArray){
+    private fun merge(inputArray: IntArray, leftHalf : IntArray, rightHalf : IntArray){
         val leftSize = leftHalf.size
         val rightSize = rightHalf.size
 
-        var leftIterator = 0 //i
-        var rightIterator = 0 //j
-        var inputArrayIterator = 0 //k
+        var leftIterator = 0
+        var rightIterator = 0
+        var inputArrayIterator = 0
 
         while (leftIterator < leftSize && rightIterator < rightSize){
             if (leftHalf[leftIterator] <= rightHalf[rightIterator]){
