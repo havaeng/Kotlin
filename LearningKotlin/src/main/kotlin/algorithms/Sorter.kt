@@ -1,5 +1,5 @@
 package algorithms
 
 interface Sorter {
-    fun sort(array: IntArray)
+    fun sort(inputArray: IntArray)
 }

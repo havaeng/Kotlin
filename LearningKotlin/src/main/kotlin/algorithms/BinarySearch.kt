@@ -29,8 +29,8 @@ fun main(){
 }
 
 fun binarySearch(sortedVector: ArrayList<Int>, target : Int, low : Int, high : Int) : Int {
-    //println("Recursive call made")
     val middle = low + ((high - low) / 2)
+
     //Exit condition. If true - not done yet!
     if (high > low) {
 

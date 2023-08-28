@@ -8,15 +8,13 @@ import kotlin.random.Random
 
 fun main(args: Array<String>) {
     println("Welcome! Please make a choice: ")
+    var firstNumber = Random.nextInt(1,99)
+    var secondNumber = Random.nextInt(1,99)
+    var thirdNumber = Random.nextInt(1,99)
+    var fourthNumber = Random.nextInt(1,99)
+    var fifthNumber = Random.nextInt(1,99)
 
     do {
-        val firstNumber = Random.nextInt(1,99)
-        val secondNumber = Random.nextInt(1,99)
-        val thirdNumber = Random.nextInt(1,99)
-        val fourthNumber = Random.nextInt(1,99)
-        val fifthNumber = Random.nextInt(1,99)
-
-
         println("\nPlease make a choice. Your numbers are: " +
                 "$firstNumber " +
                 "$secondNumber " +
@@ -27,7 +25,8 @@ fun main(args: Array<String>) {
                 "1 - Calculate the sum\n" +
                 "2 - Calculate the average \n" +
                 "3 - Find min and max\n" +
-                "4 - Exit program\n" +
+                "4 - Generate new numbers\n" +
+                "5 - Exit program\n" +
                 "Input: ")
 
         val choice: Int? = readLine()?.toIntOrNull()
@@ -43,13 +42,21 @@ fun main(args: Array<String>) {
                 println(findMinAndMax(firstNumber,secondNumber, thirdNumber, fourthNumber, firstNumber))
             }
             4 -> {
+                firstNumber = Random.nextInt(1,99)
+                secondNumber = Random.nextInt(1,99)
+                thirdNumber = Random.nextInt(1,99)
+                fourthNumber = Random.nextInt(1,99)
+                fifthNumber = Random.nextInt(1,99)
+                println("\nNew numbers generated.")
+            }
+            5 -> {
                 println("Bye!")
             }
             else -> {
                 "Wrong input. Try again."
             }
         }
-    } while (choice != 4)
+    } while (choice != 5)
 }
 
 fun calcSum(first : Int, second : Int, third : Int, fourth : Int, fifth : Int) : Int {

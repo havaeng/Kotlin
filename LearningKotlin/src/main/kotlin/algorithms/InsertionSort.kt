@@ -10,14 +10,14 @@
 package algorithms
 
 class InsertionSort : Sorter {
-    override fun sort(array: IntArray) {
-        for (i in 1 until array.size) {
-            val currentValue = array[i]
+    override fun sort(inputArray: IntArray) {
+        for (i in 1 until inputArray.size) {
+            val currentValue = inputArray[i]
             var j = i - 1
-            while (j >= 0 && array[j] > currentValue) {
-                array[j + 1] = array[j--]
+            while (j >= 0 && inputArray[j] > currentValue) {
+                inputArray[j + 1] = inputArray[j--]
             }
-            array[j + 1] = currentValue
+            inputArray[j + 1] = currentValue
         }
     }
 }

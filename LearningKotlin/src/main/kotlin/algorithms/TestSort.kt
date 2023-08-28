@@ -12,7 +12,7 @@ fun main(){
     val quickSorter = QuickSort()
 
     //Populate
-    for (i in numbers.indices) numbers[i] = random.nextInt(0,size)
+    for (i in numbers.indices) numbers[i] = random.nextInt(0, size)
 
     var start: Long = System.currentTimeMillis()
     mergeSorter.sort(numbers)

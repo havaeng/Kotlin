@@ -10,7 +10,7 @@
 package algorithms
 
 class QuickSort : Sorter{
-    override fun sort(array: IntArray) {
+    override fun sort(inputArray: IntArray) {
         TODO("Not yet implemented")
     }
 }
