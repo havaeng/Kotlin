@@ -29,19 +29,19 @@ fun main(args: Array<String>) {
 
         println("\nMenu:\n1. Add book\n2. Display details\n3. Exit program")
 
-        var choice: Int? = readlnOrNull()?.toIntOrNull()
+        val choice: Int? = readlnOrNull()?.toIntOrNull()
 
         when (choice) {
             1 -> {
                 println("Adding new book")
                 println("ISBN: ")
-                var ISBN = readlnOrNull()
+                val ISBN = readlnOrNull()
                 println("Title: ")
-                var title = readlnOrNull()
+                val title = readlnOrNull()
                 println("Author: ")
-                var author = readlnOrNull()
+                val author = readlnOrNull()
                 println("Year: ")
-                var year = readlnOrNull()
+                val year = readlnOrNull()
                 bookInventory.add(
                     addBook(
                         ISBN.toString(),
@@ -53,7 +53,7 @@ fun main(args: Array<String>) {
             }
             2 -> {
                 println("Enter ISBN of book you would like to see details for:")
-                var ISBN = readln()
+                val ISBN = readln()
                 var bookFound = false
 
                 for (book in bookInventory)
@@ -65,7 +65,7 @@ fun main(args: Array<String>) {
                         bookFound = true
                         break
                     }
-                if (bookFound == false)
+                if (!bookFound)
                     println("Book not found")
             }
             else -> {
